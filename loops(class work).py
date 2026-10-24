@@ -97,24 +97,24 @@ n = 1
 # print(neg)
 
 
-n = int(input())
-
-n_s = n
-s = 0
-
-d = 1
-dev = 10
-while n // dev != 0:
-    dev *= 10
-    d += 1
-print(f"{d} digits")
-
-while d!=0:
-    s += n_s // 10**d
-    n_s %= 10**d
-    d-=1
-s += n % 10
-print(f"sum {s}")
+# n = int(input())
+#
+# n_s = n
+# s = 0
+#
+# d = 1
+# dev = 10
+# while n // dev != 0:
+#     dev *= 10
+#     d += 1
+# print(f"{d} digits")
+#
+# while d!=0:
+#     s += n_s // 10**d
+#     n_s %= 10**d
+#     d-=1
+# s += n % 10
+# print(f"sum {s}")
 
 
 # Game
@@ -132,3 +132,25 @@ print(f"sum {s}")
 #         print ("Too low")
 #     g = int(input())
 # print("You win")
+
+
+#15
+
+# n = int(input())
+#
+#
+# for i in range(1, n + 1):
+#     c = 0
+#     while c != i:
+#         print(c+1, end=" ")
+#         c += 1
+#     print("")
+
+#16
+
+n = int(input())
+
+for i in range(1, n + 1):
+    for j in range(1, 11):
+        print(f'{i} x {j} = {i*j}')
+    print("\n")
